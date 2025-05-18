@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Event Registration</title>
+</head>
+<body class="bg-slate-300 min-h-screen flex justify-center items-center px-4">
+  <form class="bg-cyan-600 w-full max-w-md p-6 rounded-lg shadow-lg space-y-4 text-black">
+    <h1 class="text-2xl font-bold text-center mb-4 text-white">Event Registration Form</h1>
+
+    <!-- Participant Name -->
+    <div>
+      <label for="fname" class="block mb-1 text-white">Participant Name:</label>
+      <input type="text" id="fname" name="fname" required
+        class="w-full border border-gray-400 bg-white text-black p-2 rounded" />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email" class="block mb-1 text-white">Enter your email:</label>
+      <input type="email" id="email" name="email" required
+        class="w-full border border-gray-400 bg-white text-black p-2 rounded" />
+    </div>
+
+    <!-- Contact Number -->
+    <div>
+      <label for="number" class="block mb-1 text-white">Contact Number:</label>
+      <input type="tel" id="number" name="number"
+        class="w-full border border-gray-400 bg-white text-black p-2 rounded" />
+    </div>
+
+    <!-- Event Selection -->
+    <div>
+      <label class="block mb-1 text-white">Select Event:</label>
+      <div class="space-y-1">
+        <label class="text-white"><input type="radio" name="select" class="mr-2 accent-cyan-800">Conference</label><br />
+        <label class="text-white"><input type="radio" name="select" class="mr-2 accent-cyan-800">Workshop</label><br />
+        <label class="text-white"><input type="radio" name="select" class="mr-2 accent-cyan-800">Webinar</label>
+      </div>
+    </div>
+
+    <!-- Dropdown -->
+    <div>
+      <label for="dropdown" class="block mb-1 text-white">Select a meal preference:</label>
+      <select name="dropdown" id="dropdown"
+        class="w-full border border-gray-400 bg-white text-black p-2 rounded">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-vegetarian">Non-vegetarian</option>
+        <option value="Vegan">Vegan</option>
+      </select>
+    </div>
+
+    <!-- Terms -->
+    <div>
+      <label class="text-white">
+        <input type="checkbox" name="terms" class="mr-2 accent-green-600" />
+        I agree to the terms and conditions.
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit"
+        class="bg-white text-cyan-700 font-semibold px-6 py-2 rounded hover:bg-cyan-700 hover:text-white transition">
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+</html>

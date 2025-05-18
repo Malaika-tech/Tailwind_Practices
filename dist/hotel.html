@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form> 
+        <label for="fname">Guest Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+       <label for="date">Check-In:</label><br>
+       <input type="date" id="date" name="date"><br><br>
+       <label for="date">Check-out:</label><br>
+       <input type="date" id="date" name="date"><br><br>
+       <label for="dropdown">Number of guests:</label><br>
+       <select name="dropdown" id="dropdown">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+       </select><br><br>
+
+        <label for="event">Room Prefernces:</label><br>
+        <label><input type="radio" id="event" name="select">Single</label><br>
+        <label><input type="radio" id="event" name="select">Double</label><br>
+        <label><input type="radio" id="event" name="select">Suite</label><br><br>
+
+        <label for="service">Additional Services:</label><br>
+        <label><input type="checkbox" id="service" name="select">Wi-Fi</label><br>
+        <label><input type="checkbox" id="service" name="select">Breakfast</label><br>
+        <label><input type="checkbox" id="service" name="select">airport pickup</label><br><br>
+
+       <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./styles.css" rel="stylesheet" />
+  <title>E-commerce Product Review</title>
+</head>
+<body class="bg-slate-500 text-white font-sans min-h-screen flex items-center justify-center p-4">
+
+  <form class="bg-slate-700 p-6 rounded-lg shadow-md w-full max-w-md space-y-4">
+    <h1 class="text-2xl font-semibold text-center mb-4">E-commerce Product Review Form</h1>
+
+    <!-- Product Name -->
+    <div>
+      <label for="fname" class="block mb-1">Product Name:</label>
+      <input type="text" id="fname" name="fname" required 
+             class="w-full border border-gray-300 bg-white text-black p-2 rounded" />
+    </div>
+
+    <!-- Reviewer Name -->
+    <div>
+      <label for="name" class="block mb-1">Reviewer Name:</label>
+      <input type="text" id="name" name="name" 
+             class="w-full border border-gray-300 bg-white text-black p-2 rounded" />
+    </div>
+
+    <!-- Rating -->
+    <div class="bg-white text-black p-4 rounded shadow">
+      <label class="block text-lg font-medium mb-2">Rate our services from 1–5:</label>
+      <div class="space-y-2">
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="1" class="accent-yellow-400" />
+          <span>★</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="2" class="accent-yellow-400" />
+          <span>★★</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="3" class="accent-yellow-400" />
+          <span>★★★</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="4" class="accent-yellow-400" />
+          <span>★★★★</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="5" class="accent-yellow-400" />
+          <span>★★★★★</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Review Text -->
+    <div>
+      <label for="review" class="block mb-1">Write your review:</label>
+      <textarea id="review" rows="4" 
+                class="w-full border border-gray-300 bg-white text-black p-2 rounded"
+                placeholder="Write your review..."></textarea>
+    </div>
+
+    <!-- Recommendation -->
+    <div>
+      <label class="block mb-1">Would you recommend this product?</label>
+      <label class="inline-flex items-center space-x-2 mr-4">
+        <input type="radio" name="recommend" value="yes" class="accent-green-400" />
+        <span>Yes</span>
+      </label>
+      <label class="inline-flex items-center space-x-2">
+        <input type="radio" name="recommend" value="no" class="accent-red-400" />
+        <span>No</span>
+      </label>
+    </div>
+
+    <!-- Submit Button (optional) -->
+    <div class="text-center pt-2">
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+        Submit Review
+      </button>
+    </div>
+  </form>
+
+</body>
+</html>
